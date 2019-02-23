@@ -1,3 +1,21 @@
+#fade{
+  margin-left:350px;
+  text-align: center;
+  border-style:solid;
+  height:100%;
+  width:30%;
+  border-radius: 30px;
+
+}
+h1{
+  font-size: 200%;
+    margin-left:350px;
+   padding-bottom: 10px;
+
+}
 #faded{
   display:none;
+}
+P{
+  text-align: center;
 }

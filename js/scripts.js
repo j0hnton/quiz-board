@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("button#quiz").click(function(){
-    $("div#faded").toggle(3000);  
+  $("button#start").click(function(){
+    $("div#faded").toggle(2000)
   });
-});
+  });
