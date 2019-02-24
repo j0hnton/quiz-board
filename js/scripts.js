@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $("#quiz").submit(function(event){
     event.preventDefault();
-    var answer1 = ($("radio[name=q1]:checked").val());
-    var answer2 = ($("radio[name=q2]:checked").val());
-    var answer3 = ($("radio[name=q3]:checked").val());
-    var answer4 = ($("input:radio[name=q4]:checked").val());
-    var answer5 = ($("input:radio[name=q5]:checked").val());
+    var answer1 = ($("radio[name=q1]").val());
+    var answer2 = ($("radio[name=q2]").val());
+    var answer3 = ($("radio[name=q3]").val());
+    var answer4 = ($("input:radio[name=q4]").val());
+    var answer5 = ($("input:radio[name=q5]").val());
 
     var number1=parseInt(answer1);
     var number2=parseInt(answer2);
@@ -18,3 +18,9 @@ $(document).ready(function(){
     $("#results").text(display+"%");
   });
 });
+
+$(document).ready(function(){
+  $("button#start").click(function(){
+    $("#quiz").toggle(3000);
+  })
+})
