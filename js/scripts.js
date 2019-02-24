@@ -21,6 +21,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("button#start").click(function(){
-    $("#quiz").toggle(3000);
+    $("#faded").toggle(3000);
+    $("#fade").toggle(1000);
+    $("#leave").toggle(1000);
   })
 })
