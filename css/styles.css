@@ -21,6 +21,9 @@ h1{
 }
 #faded{
   display:none;
+  border-radius:30px;
+  border-color:black;
+  background-color:#99A3A4;
 }
 h2{
 margin-left:33.5%;
