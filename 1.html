@@ -2,104 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+  <p id="details"></p>
     <title></title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+        <form id="quiz">
 
-   <button type="button" class="btn btn-primary" id="start">Begin the test</button>
-   <a href="index.html">Go back</a>
+          <!-- QUESTION1 -->
+              <li>What is the other name of JavaScript?<br>
+            <div class="question">
+              <input type="radio" name="q1"id="wrong">jQuery<br>
+              <input type="radio" name="q1" id="right">js<br>
+              <input type="radio" name="q1" id="wrong">java<br>
+             </li>
+           </div>
+          <!-- QUESTION2 -->
+             <li>Where is the correct place to insert a JavaScript?<br>
+           <div class="question">
+              <input type="radio" name="q2" id="right">< head > and < body > section<br>
+              <input type="radio" name="q2" id="wrong">< head > section<br>
+             <input type="radio" name="q2" id="wrong">< body > section<br>
+            </li>
+            </div>
+          <!-- QUESTION3 -->
+            <li>The external JavaScript file must contain the < script> tag.<br>
+            <div class="question">
+           <input type="radio" name="q3" id="right">True<br>
+           <input type="radio"  name="q3"id="wrong">False<br>
+           </li>
+          </div>
+          <!-- QUESTION4 -->
+           <li>How do you write "Hello World" in an alert box?<br>
+            <div class="question">
+          <input type="radio"  name="q4" id="right">alert()<br>
+          <input type="radio"  name="q4" id="wrong">AlertBox("Hello World")<br>
+           <input type="radio" name="q4" id="wrong">alertbox("Hello world")<br>
+          </li>
+          </div>
+          <!-- QUESTION5 -->
+          <li>Is JavaScript a true programming language?<br>
+          <div>
+            <input type="radio" name="q5" id="right">True<br>
+            <input type="radio" name="q5" id="wrog">False<br>
+            <input type="radio" name="q5" id="wrong">Probably<br>
+          </li>
+          </div>
+            <button type="submit" class="btn btn-info" name="button">Submit</button>
 
-   <div id="faded">
-     <ol>
-             <li><p>What is the other name for JavaScript?</p>
-                 <div class="radio">
-                       <label>
-                         <input type="radio" name="" value="">
-                         C++
-                       </label>
-                     </div>
-                     <div class="radio">
-                       <label>
-                         <input type="radio" name="flavor" value="vanilla">
-                       jQuery
-                       </label>
-                     </div>
-                     <div class="radio">
-                       <label>
-                         <input type="radio" name="flavor" value="cookiesandcream">
-                         JS
-                       </label>
-                     </div>
-                   </li>
 
-                         <li><p>What is the correct format of creating an array?</p>
-                             <div class="radio">
-                                   <label>
-                                     <input type="radio" name="flavor" value="chocolate" checked>
-                                     C++
-                                   </label>
-                                 </div>
-                                 <div class="radio">
-                                   <label>
-                                     <input type="radio" name="flavor" value="vanilla">
-                                   jQuery
-                                   </label>
-                                 </div>
-                                 <div class="radio">
-                                   <label>
-                                     <input type="radio" name="flavor" value="cookiesandcream">
-                                     JS
-                                   </label>
-                                 </div>
-                               </li>
-                               <li><p>Which of the following is not a control structure in JavaScript</p>
-                                   <div class="radio">
-                                         <label>
-                                           <input type="radio" name="flavor" value="chocolate" checked>
-                                           C++
-                                         </label>
-                                       </div>
-                                       <div class="radio">
-                                         <label>
-                                           <input type="radio" name="flavor" value="vanilla">
-                                         jQuery
-                                         </label>
-                                       </div>
-                                       <div class="radio">
-                                         <label>
-                                           <input type="radio" name="flavor" value="cookiesandcream">
-                                           JS
-                                         </label>
-                                       </div>
-                                     </li>
-                                     <li><p>How are functions written?</p>
-                                         <div class="radio">
-                                               <label>
-                                                 <input type="radio" name="flavor" value="chocolate" checked>
-                                                 C++
-                                               </label>
-                                             </div>
-                                             <div class="radio">
-                                               <label>
-                                                 <input type="radio" name="flavor" value="vanilla">
-                                               jQuery
-                                               </label>
-                                             </div>
-                                             <div class="radio">
-                                               <label>
-                                                 <input type="radio" name="flavor" value="cookiesandcream">
-                                                 JS
-                                               </label>
-                                             </div>
-                                           </li>
+          <div id="results"></div>
 
-     </ol>
-     </div>
-
-    <p id="result"></p>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
   </body>
 </html>
