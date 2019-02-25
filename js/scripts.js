@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("button#start").click(function(){
-      $("#faded").toggle(3000);
+      $("#faded").toggle(300);
       $("#fade").toggle(1000);
       $("#leave").toggle(1000);
 
