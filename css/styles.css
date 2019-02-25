@@ -38,7 +38,7 @@ body{
   background-repeat: no-repeat;
 }
 p{
-  color:white;
+  color:black;
 
 }
 #class{
@@ -46,7 +46,7 @@ p{
 }
 a{
   color:white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover{
   color:black;
