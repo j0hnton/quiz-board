@@ -1,3 +1,4 @@
+// user interface
 $(document).ready(function(){
     $("button#start").click(function(){
       $("#faded").toggle(3000);
@@ -5,7 +6,7 @@ $(document).ready(function(){
       $("#leave").toggle(1000);
 
   });
-
+// business logic
   $("#faded").submit(function(){
 
     var answer1 = $("input:radio[name=q1]:checked").val();
@@ -13,6 +14,7 @@ $(document).ready(function(){
     var answer3 = $("input:radio[name=q3]:checked").val();
     var answer4 = $("input:radio[name=q4]:checked").val();
     var answer5 = $("input:radio[name=q5]:checked").val();
+    var name=$("#name").show();
 
     var number1=parseInt(answer1);
     var number2=parseInt(answer2);
@@ -20,13 +22,16 @@ $(document).ready(function(){
     var number4=parseInt(answer4);
     var number5=parseInt(answer5);
 
-   var show =((number1+number2+number3+number4+number5 )/50*100);
-document.getElementById("results").innerHTML="Total percentage="+ show + "%";
 
+   var show =((number1+number2+number3+number4+number5 )/50*100);
+document.getElementById("results").innerHTML= name+"you have scored"+show + "%";
+
+
+// user interface
 if(show>50){
   alert("Excellent")
 
- if((show<79)(show>50)){
+ if((show<80)||(show>50)){
   alert("Fair")
 }
 else{
