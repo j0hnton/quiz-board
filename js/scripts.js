@@ -20,10 +20,10 @@ $(document).ready(function(){
     var number4=parseInt(answer4);
     var number5=parseInt(answer5);
 
-    var show =((number1+number2+number3+number4+number5 )/50*100);
-alert(show);
+   var show =((number1+number2+number3+number4+number5 )/50*100);
+document.getElementById("results").innerHTML="Total percentage="+ show + "%";
 
-if(show>=80){
+if(show>50){
   alert("Excellent")
 
  if((show<79)(show>50)){
