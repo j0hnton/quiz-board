@@ -46,7 +46,7 @@ p{
 }
 a{
   color:white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover{
   color:black;
