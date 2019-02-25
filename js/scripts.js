@@ -14,7 +14,7 @@ $(document).ready(function(){
     var answer3 = $("input:radio[name=q3]:checked").val();
     var answer4 = $("input:radio[name=q4]:checked").val();
     var answer5 = $("input:radio[name=q5]:checked").val();
-    var name=$("#name").show();
+    var name=$("input#name").val();
 
     var number1=parseInt(answer1);
     var number2=parseInt(answer2);
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
    var show =((number1+number2+number3+number4+number5 )/50*100);
-document.getElementById("results").innerHTML= name+"you have scored"+show + "%";
+document.getElementById("results").innerHTML= name+" "+"you have scored"+show + "%";
 
 
 // user interface
