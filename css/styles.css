@@ -9,6 +9,7 @@
   background-color:#99A3A4;
   font-size:100%;
   font-family:Quicksand;
+  opacity:0.8;
 }
 
 h1{
@@ -24,6 +25,7 @@ h1{
   border-radius:30px;
   border-color:black;
   background-color:#99A3A4;
+  opacity:0.8;
 }
 h2{
 margin-left:33.5%;
@@ -64,4 +66,10 @@ a:hover{
 }
 #head:hover{
   color:grey;
+}
+#results{
+  font-family:Playfair default;
+  font-size: 200%;
+  margin-left: 35.3%;
+  opacity:0.8;
 }
